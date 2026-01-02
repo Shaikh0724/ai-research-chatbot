@@ -1,0 +1,20 @@
+# API Keys and Secrets
+.env
+
+# Python Virtual Environment
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Streamlit temporary files
+.streamlit/config.toml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Database (Optional)
+# Agar aap chahte hain ke database online build ho toh isay comment rehne dein
+# Agar aap chahte hain ke local database hi upload ho toh niche wali line hata dein
+# chroma_db/
