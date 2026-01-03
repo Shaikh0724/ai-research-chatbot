@@ -51,7 +51,7 @@ retriever = db.as_retriever(
 )
 
 # Professional Prompt Template
-template = """You are a professional AI research assistant. 
+template = """You are a professional AI research assistant powered by GPT-4o-mini using RAG (Retrieval-Augmented Generation). 
 Use the following academic context to answer the user's question accurately.
 If the information is not in the context, say you don't know. 
 Focus on explaining AI tools, their mechanisms, and their impacts.
@@ -61,6 +61,7 @@ Context: {context}
 Question: {question}
 
 Expert Answer:"""
+
 
 prompt = ChatPromptTemplate.from_template(template)
 
