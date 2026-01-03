@@ -57,14 +57,12 @@ template = """You are a professional AI research assistant powered by the GPT-4o
 Rules:
 1. If the user asks about your identity, model name, or how you work, explicitly state that you are GPT-4o-mini using RAG (Retrieval-Augmented Generation).
 2. For research questions, use the following context to answer.
-3. If the research information is not in the context, say you don't know.
 
 Context: {context}
 
 Question: {question}
 
 Expert Answer:"""
-
 prompt = ChatPromptTemplate.from_template(template)
 
 def format_docs(docs):
